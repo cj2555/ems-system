@@ -84,6 +84,16 @@
                                             <td><input type="checkbox" name="name[user][can-list]" value="1"></td>
 
                                         </tr>
+                                        <tr>
+
+                                            <td>leave</td>
+                                            <td><input type="checkbox" name="name[leave][can-add]" value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-edit]" value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-view]" value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-delete]" value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-list]" value="1"></td>
+
+                                        </tr>
 
 
 

@@ -72,7 +72,16 @@
 
                                         </tr>
 
+                                        <tr>
 
+                                            <td>leave</td>
+                                            <td><input type="checkbox" name="name[leave][can-add]" @if(isset($permission['name']['leave']['can-add'])) checked @endif value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-edit]" @if(isset($permission['name']['leave']['can-edit'])) checked @endif value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-view]" @if(isset($permission['name']['leave']['can-view'])) checked @endif value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-delete]" @if(isset($permission['name']['leave']['can-delete'])) checked @endif value="1"></td>
+                                            <td><input type="checkbox" name="name[leave][can-list]" @if(isset($permission['name']['leave']['can-list'])) checked @endif value="1"></td>
+
+                                        </tr>
 
 
 

@@ -23,7 +23,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => ['auth', 'has.permission']], function () {
     Route::get('/', function () {
         return view('welcome');
     });
@@ -32,6 +32,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('roles', 'RoleController');
     Route::resource('users', 'UserController');
     Route::resource('permission', 'PermissionController');
+    Route::resource('leave', 'LeaveController');
 });
 
 

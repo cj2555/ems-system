@@ -1,4 +1,5 @@
 @extends('admin.layouts.master')
+@section('content')
 <div class="container mt-5">
 
     <table class="table">
@@ -13,7 +14,7 @@
         </thead>
         <tbody>
 
-            @if(count($roles>)>0)
+
             @foreach($roles as $key => $role)
             <tr>
                 <th scope="row">{{$key+1}}</th>
@@ -28,7 +29,8 @@
 
             </tr>
             @endforeach
-            @endif
+
         </tbody>
     </table>
 </div>
+@endsection
